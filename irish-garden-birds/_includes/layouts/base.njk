@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Irish Garden Birds | {{ title if title else eleventyNavigation.key }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    {% if stylesheet %}<link rel="stylesheet" href="/css/pages/{{ stylesheet }}.css">{% endif %}
+    <meta charset="utf-8">
+  </head>
+  <body>
+    {% include "partials/header.njk" %}
+    {% include "partials/navbar.njk" %}
+    {{ content | safe }}
+    {% include "partials/footer.njk" %}
+  </body>
+</html>

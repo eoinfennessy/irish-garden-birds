@@ -1,0 +1,8 @@
+{
+	"layout": "layouts/birds-&-wildlife-layout.njk",
+	"stylesheet": "birds-&-wildlife-items",
+	"tags": "birdsAndWildlifeItems",
+	"eleventyNavigation": {
+		"parent": "Birds & Wildlife"
+	}
+}

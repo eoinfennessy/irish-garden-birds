@@ -1,0 +1,39 @@
+main {
+	background-color: var(--light-background);
+	padding: 2em 0;
+}
+
+.news-item-link {
+	display: flex;
+	grid-gap: 25px;
+	text-decoration: none;
+	max-width: 800px;
+	padding: 2em;
+	margin: 1.5em auto;
+	background-color: var(--mid-background);
+	list-style: none;
+}
+
+.card-thumbnail {
+	object-fit: cover;
+	height: 300px;
+	width: 300px;
+}
+
+h2 {
+	margin: 0 0 10px 0;
+	font-size: 1.8em;
+	color: var(--dark-text);
+}
+
+.date {
+	display: block;
+	color: #6c6c60;
+	margin: 0 0 10px 0;
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+p {
+	color: #000000;
+}

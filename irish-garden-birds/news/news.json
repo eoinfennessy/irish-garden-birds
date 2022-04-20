@@ -1,0 +1,8 @@
+{
+	"layout": "layouts/news-article-layout.njk",
+	"stylesheet": "news-articles",
+	"tags": "newsArticles",
+	"eleventyNavigation": {
+		"parent": "News"
+	}
+}

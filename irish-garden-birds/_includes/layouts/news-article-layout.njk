@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+
+<main id="news-item-container">
+  <article class="news-item">
+    <h1>{{ title }}</h1>
+    <span class="date">{{ page.date.toLocaleString() }}</span>
+    <img id="main-image" src="/images/news-articles/{{ imageFolder }}/main.jpg">
+    {{ content | safe }}
+  </article>
+</main>

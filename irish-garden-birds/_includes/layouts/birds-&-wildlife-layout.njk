@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+
+<main id="birds-and-wildlife-item-container">
+  <article class="birds-and-wildlife-item">
+    <h1>{{ eleventyNavigation.key }}</h1>
+    <h2 class="irish-name">{{ irishName }}</h2>
+    <img id="main-image" src="/images/birds-&-wildlife-items/{{ imageFolder }}/main.jpg">
+    {{ content | safe }}
+  </article>
+</main>

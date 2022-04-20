@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+stylesheet: news
+eleventyNavigation:
+  key: News
+  parent: Home
+---
+
+<div id="hero-image-container">
+  <img src="/images/news/wren.jpg" id="hero-image">
+  <h1 id="hero-image-heading">{{ eleventyNavigation.key }}</h1>
+</div>
+<main>
+  {% for article in collections.newsArticles | reverse %}
+    <a href="{{ article.url }}" class="news-item-link">
+      <img src="/images/news-articles/{{ article.data.imageFolder }}/thumbnail.jpg" class="card-thumbnail">
+      <div>
+        <h2>{{ article.data.title }}</h2>
+        <span class="date">{{ article.date.toLocaleString() }}</span>
+        <p>{{ article.data.eleventyNavigation.excerpt }}</p>
+      </div>
+    </a>
+  {% endfor %}
+</main>

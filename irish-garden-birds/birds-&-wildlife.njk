@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+stylesheet: birds-&-wildlife
+eleventyNavigation:
+  key: Birds & Wildlife
+  parent: Home
+---
+
+<div id="hero-image-container">
+  <img src="/images/birds-&-wildlife/hero-chaffinch-4.jpeg" id="hero-image">
+  <h1 id="hero-image-heading">Birds & Wildlife</h1>
+</div>
+
+<main>
+  <div id="bird-card-container">
+    {% for item in collections.birdsAndWildlifeItems %}
+      <a href="{{ item.url }}" class="bird-card">
+        <img src="/images/birds-&-wildlife-items/{{ item.data.imageFolder }}/thumbnail.jpg" class="bird-card-thumbnail">
+        <h2>{{ item.data.eleventyNavigation.key }}</h2>
+        <h3>{{ item.data.irishName }}</h3>
+        <p>{{ item.data.eleventyNavigation.excerpt }}</p>
+      </a>
+    {% endfor %}
+  </div>
+</main>

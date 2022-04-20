@@ -1,0 +1,12 @@
+#social-media-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#social-media-icons a {
+  height: inherit;
+}
+
+#social-media-icons svg {
+  height: inherit;
+}

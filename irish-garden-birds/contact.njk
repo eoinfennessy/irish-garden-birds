@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+stylesheet: contact
+eleventyNavigation:
+  key: Contact Us
+  parent: Home
+---
+
+<div id="hero-image-container">
+  <img src="/images/contact/wren.jpg" id="hero-image">
+  <h1 id="hero-image-heading">Contact</h1>
+</div>
+
+<main>
+  <form action="mailto:20100018@mail.wit.ie"
+  method="POST"
+  enctype="multipart/form-data"
+  name="EmailForm">
+    <label>Name:
+      <input type="text" size="19" name="Contact-Name">
+    </label>
+    <label>Email:
+      <input type="email" name="Contact-Email">
+    </label>
+    <label>Message:
+      <textarea name="Contact-Message" rows="6"></textarea>
+    </label>
+    <button type="submit" value="Submit">SEND</button>
+  </form>
+</main>

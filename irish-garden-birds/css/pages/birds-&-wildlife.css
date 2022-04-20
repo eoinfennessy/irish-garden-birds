@@ -1,0 +1,46 @@
+#bird-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding: 50px 0px;
+  background-color: var(--light-background);
+}
+
+.bird-card {
+  text-decoration: none;
+  padding: 25px;
+  width: 320px;
+  background-color: var(--mid-background);
+  transition: 0.5s;
+}
+
+.bird-card:hover {
+  transform: translate(0px, -3px);
+  box-shadow: var(--dark-text) 0px 3px 5px;
+}
+
+.bird-card img {
+  width: 100%;
+}
+
+.bird-card h2 {
+  color: var(--dark-text);
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-size: 1.7em;
+}
+
+.bird-card h3 {
+  color: var(--primary-dark);
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+}
+
+.bird-card p {
+  color: var(--dark-text);
+  width: 90%;
+  margin: 0 auto;
+}

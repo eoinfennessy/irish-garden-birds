@@ -1,0 +1,47 @@
+@import url(colours.css);
+@import url(partials/header.css);
+@import url(partials/social-media-icons.css);
+@import url(partials/navbar.css);
+@import url(partials/footer.css);
+
+* {
+  font-family: verdana, geneva, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'gill sans', 'gill sans mt', calibri, sans-serif;
+  font-weight: normal;
+}
+
+main {
+  margin: 60px auto;
+  max-width: 1366px;
+  width: 80%;
+}
+
+#hero-image {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#hero-image-container {
+  position: relative;
+}
+
+#hero-image-heading {
+  background-image: radial-gradient(#00000055, #00000000, #00000000);
+  color: #FFFFFF;
+  font-size: 4em;
+  font-weight: normal;
+  text-shadow: 2px 1px 1px black;
+  transform: translate(-50%, -50%);
+  padding: 70px 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Prevent unnecessary line breaks created due to translate */
+   white-space: nowrap;
+}

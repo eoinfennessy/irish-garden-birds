@@ -1,0 +1,37 @@
+#birds-and-wildlife-item-container {
+  background-color: var(--light-background);
+}
+
+.birds-and-wildlife-item {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 1em;
+}
+
+.irish-name {
+  color: var(--mid-gray-text);
+  font-size: 1.8em;
+  font-style: italic;
+  margin: 0em 0 1em 0;
+}
+
+#main-image {
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+.bird-song {
+  margin: 2em 0;
+  color: var(--mid-gray-text);
+  font-size: 0.9em;
+  font-style: italic;
+}

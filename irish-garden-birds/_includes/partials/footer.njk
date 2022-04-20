@@ -1,0 +1,8 @@
+<footer>
+	<div id="sitemap">
+		{{ collections.all | eleventyNavigation("Home") | eleventyNavigationToHtml | safe }}
+	</div>
+	<hr>
+	{% include "partials/social-media-icons.njk" %}
+	<small>© Irish Garden Birds, 2022</small>
+</footer>
